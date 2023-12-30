@@ -11,6 +11,7 @@ class UpdateProduct {
   }) async {
     Api api = Api();
 
+    // ignore: missing_required_param
     Map<String, dynamic> data = await api.post(
       url: 'https://fakestoreapi.com/products',
       body: {

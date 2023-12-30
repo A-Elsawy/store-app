@@ -5,6 +5,7 @@ class GetAllCategoriesService {
     Api api = Api();
 
     List<dynamic> data =
+        // ignore: missing_required_param
         await api.get(url: 'https://fakestoreapi.com/products/categories');
 
     return data;

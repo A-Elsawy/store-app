@@ -5,6 +5,7 @@ class GetAllProductsService {
   Future<List<ProductModel>> getAllProducts() async {
     Api api = Api();
     List<dynamic> data =
+        // ignore: missing_required_param
         await api.get(url: 'https://fakestoreapi.com/products');
 
     List<ProductModel> productsList = [];
