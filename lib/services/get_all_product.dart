@@ -1,7 +1,7 @@
 import 'package:store_app/helper/api.dart';
 import 'package:store_app/models/product_model.dart';
 
-class GetAllProductsService {
+class AllProductsService {
   Future<List<ProductModel>> getAllProducts() async {
     Api api = Api();
     List<dynamic> data =

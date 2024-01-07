@@ -2,11 +2,11 @@ import 'package:store_app/models/rating_model.dart';
 
 class ProductModel {
   final int id;
-  final String title;
-  final double price;
-  final String description;
-  final String image;
-  final RatingModel rating;
+  final String? title;
+  final double? price;
+  final String? description;
+  final String? image;
+  final RatingModel? rating;
 
   ProductModel({
     required this.id,
