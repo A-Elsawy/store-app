@@ -7,18 +7,16 @@ void main() {
 }
 
 class StoreApp extends StatelessWidget {
-  const StoreApp({super.key});
+  const StoreApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       routes: {
-        HomePage.routeName: (context) => const HomePage(),
-        UpdateProductPage.routeName: (context) => const UpdateProductPage(),
+        HomePage.id: (context) => HomePage(),
+        UpdateProductPage.id: (context) => UpdateProductPage(),
       },
-      initialRoute: HomePage.routeName,
+      initialRoute: HomePage.id,
     );
   }
 }
